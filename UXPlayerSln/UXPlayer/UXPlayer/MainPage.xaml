@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UXPlayer.MainPage"
+            Title="Whatsapp"
+            BarBackgroundColor="#0B6752">
+
+    <ContentPage IconImageSource="photoCamera.png" WidthRequest="10"/>
+
+    <ContentPage Title="Chats" >
+        
+       <Grid>
+           <Grid.ColumnDefinitions><ColumnDefinition Width="*" /></Grid.ColumnDefinitions><Grid.RowDefinitions><RowDefinition Height="*" /></Grid.RowDefinitions>
+        <StackLayout>
+            <ListView>
+                
+            </ListView>
+        </StackLayout>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Status">
+        <StackLayout>
+            <Label Text="Recent Update" TextColor="Gray" BackgroundColor="LightGray" FontSize="Subtitle" />
+            
+            <Label Text="Viewed Update" TextColor="Gray" BackgroundColor="LightGray" FontSize="Subtitle" />
+
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Calls" />
+</TabbedPage>
